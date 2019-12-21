@@ -29,6 +29,19 @@
  *                                                    //  Ask her again.';
  */
 function willYouMarryMe(/* isPositiveAnswer */) {
+//  return new Promise(function(resolve,rejecte){
+//     if (Boolean(isPositiveAnswer) === true ) {
+//       console.log('true = '+isPositiveAnswer)
+//       resolve('Hooray!!! She said "Yes"!')
+//     }else if (Boolean(isPositiveAnswer) === false ) {
+//       console.log('false = '+isPositiveAnswer)
+//       resolve('Oh no, she said "No".')
+//     } else{
+//     console.log("error = "+isPositiveAnswer)
+//      rejecte(new Error('Wrong parameter is passed! Ask her again.'))}
+//   })
+  // .then((data)=>{data})
+//  .catch((error)=>{error})
   throw new Error('Not implemented');
 }
 
