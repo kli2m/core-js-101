@@ -24,7 +24,7 @@
  *
  */
 function getComposition(f, g) {
-  return function (x) {
+  return function func(x) {
     return f(g(x));
   };
 }
@@ -47,7 +47,7 @@ function getComposition(f, g) {
  *
  */
 function getPowerFunction(exponent) {
-  return function (x) {
+  return function func(x) {
     return x ** exponent;
   };
 }
@@ -87,10 +87,10 @@ function getPolynom() {
  */
 function memoize(func) {
   const a = func();
-  const F = function (val) {
+  const F = function fff(val) {
     this.fun = val;
   };
-  F.prototype.funct = function () {
+  F.prototype.funct = function ffff() {
     return this.fun;
   };
   const r = new F(a);

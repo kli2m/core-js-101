@@ -53,7 +53,6 @@ function getCicleCircumference(radius) {
  */
 function getAverage(value1, value2) {
   return value1 / 2 + value2 / 2;
-//  throw new Error('Not implemented');
 }
 
 /**
