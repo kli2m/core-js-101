@@ -185,7 +185,8 @@ function roundToPowerOfTen(num, pow) {
     const MathPow = 10 ** pow;
     const tmp = num / MathPow;
     return Math.round(tmp) * MathPow;
-  } return num;
+  }
+  return num;
 }
 
 /**

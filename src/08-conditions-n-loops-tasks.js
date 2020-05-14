@@ -166,7 +166,8 @@ function isInsideCircle(circle, point) {
   const val = ((point.x - circle.center.x) ** 2 + (point.y - circle.center.y) ** 2);
   if ((circle.radius ** 2) > val) {
     return true;
-  } return false;
+  }
+  return false;
 }
 
 
@@ -347,8 +348,13 @@ function getDigitalRoot(num) {
  */
 function isBracketsBalanced(str) {
   if (str.length % 2 !== 0) return false;
-  const value = [['[', ']'], ['(', ')'], ['{', '}'], ['<', '>']];
-  // const arr=str.toString().split('')
+  const value = [
+    ['[', ']'],
+    ['(', ')'],
+    ['{', '}'],
+    ['<', '>'],
+  ];
+    // const arr=str.toString().split('')
   const arr = [];
   // if (arr.every((v)=>{return value.some((x)=>{return v===x})})) {
   //   console.log("str ok "+str)
